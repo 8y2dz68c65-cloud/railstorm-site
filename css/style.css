@@ -158,3 +158,11 @@ kbd { display: inline-block; min-width: 40px; padding: 5px 10px; margin: 2px; te
 .region:hover { color: #fff; border-color: var(--ember); }
 .region.on { color: #fff; border-color: var(--ember); background: #2a0d08; }
 .mars-note { color: var(--ember); font-style: italic; margin: 8px 0 0; }
+
+/* Download */
+.download-box { border: 1px solid var(--line); background: linear-gradient(180deg, #0f0b0b99, #0b0c0f99); margin-top: 72px; padding-top: 48px; padding-bottom: 40px; }
+.btn.big { font-size: 20px; padding: 18px 40px; }
+.dl-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; margin: 34px 0 18px; }
+.dl-cols h4 { color: var(--ember); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 10px; }
+.dl-cols ol, .dl-cols ul { padding-left: 20px; color: var(--dim); line-height: 1.6; }
+.dl-cols p { color: var(--dim); line-height: 1.6; }
