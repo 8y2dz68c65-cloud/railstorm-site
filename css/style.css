@@ -166,3 +166,4 @@ kbd { display: inline-block; min-width: 40px; padding: 5px 10px; margin: 2px; te
 .dl-cols h4 { color: var(--ember); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 10px; }
 .dl-cols ol, .dl-cols ul { padding-left: 20px; color: var(--dim); line-height: 1.6; }
 .dl-cols p { color: var(--dim); line-height: 1.6; }
+.ember-link { color: var(--ember); }
