@@ -167,3 +167,11 @@ kbd { display: inline-block; min-width: 40px; padding: 5px 10px; margin: 2px; te
 .dl-cols ol, .dl-cols ul { padding-left: 20px; color: var(--dim); line-height: 1.6; }
 .dl-cols p { color: var(--dim); line-height: 1.6; }
 .ember-link { color: var(--ember); }
+
+/* Story */
+.story .chapters { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; margin-top: 30px; }
+.chapter { border-left: 2px solid var(--blood); padding: 4px 0 4px 18px; }
+.chapter .num { color: var(--ember); font-size: 13px; letter-spacing: .3em; }
+.chapter h4 { margin: 4px 0 8px; letter-spacing: .12em; text-transform: uppercase; }
+.chapter p { color: var(--dim); line-height: 1.65; }
+.story-quote { text-align: center; font-size: 26px; color: var(--steel); margin: 46px 0 10px; font-style: italic; }
