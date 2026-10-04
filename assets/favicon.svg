@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.40 -1.40 6.80 8.80">
+<defs><filter id="g" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="0.28" result="b1"/><feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect x="-1.40" y="-1.40" width="6.80" height="8.80" fill="#04060f"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#g)">
+<path d="M0.00 6.00 L0.00 0.00 L3.00 0.00 L4.00 1.00 L4.00 2.00 L3.00 3.00 L0.00 3.00" stroke="#00e5ff" stroke-width="0.42"/>
+<path d="M0.00 6.00 L0.00 0.00 L3.00 0.00 L4.00 1.00 L4.00 2.00 L3.00 3.00 L0.00 3.00" stroke="#ff1aa6" stroke-width="0.9" opacity="0.35"/>
+<path d="M2.00 3.00 L4.00 6.00" stroke="#00e5ff" stroke-width="0.42"/>
+<path d="M2.00 3.00 L4.00 6.00" stroke="#ff1aa6" stroke-width="0.9" opacity="0.35"/>
+</g><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0.00 6.00 L0.00 0.00 L3.00 0.00 L4.00 1.00 L4.00 2.00 L3.00 3.00 L0.00 3.00" stroke="#fff" stroke-width="0.12" opacity="0.95"/>
+<path d="M2.00 3.00 L4.00 6.00" stroke="#fff" stroke-width="0.12" opacity="0.95"/>
+</g></svg>

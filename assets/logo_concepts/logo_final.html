@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Railstorm final logos</title>
+<style>
+@font-face { font-family: BlackOps; src: url("fonts/BlackOpsOne-Regular.ttf"); }
+@font-face { font-family: Rajdhani; src: url("fonts/Rajdhani-Bold.ttf"); }
+@font-face { font-family: Orbitron; src: url("fonts/Orbitron[wght].ttf"); font-weight: 400 900; }
+@font-face { font-family: Chakra; src: url("fonts/ChakraPetch-Bold.ttf"); }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: transparent; }
+/* Each logo lives in its own fixed-size stage so the screenshot script can crop it: ?logo=full|word|emblem|cluex */
+.stage { display: none; position: relative; overflow: hidden; background: transparent; }
+body.full #full, body.word #word, body.emblem #emblem, body.cluex #cluex { display: flex; }
+#full { width: 2900px; height: 800px; align-items: center; justify-content: center; gap: 56px; }
+#word { width: 2300px; height: 520px; flex-direction: column; align-items: center; justify-content: center; }
+#emblem { width: 700px; height: 800px; align-items: center; justify-content: center; }
+#cluex { width: 1600px; height: 560px; flex-direction: column; align-items: center; justify-content: center; }
+
+.word { font: 400 300px BlackOps; letter-spacing: 14px; line-height: 1; text-transform: uppercase; position: relative; display: inline-block;
+  background: linear-gradient(180deg, #ffffff 0%, #dbe8f6 24%, #8aa3c0 47%, #0e1522 50%, #345a88 60%, #86b6e6 82%, #cfe8ff 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 3px #070c16;
+  filter: drop-shadow(0 10px 0 #04070d) drop-shadow(0 0 14px rgba(0,200,255,.35)); padding: 0 14px; }
+.rail { position: absolute; left: -2%; right: -2%; top: 47.5%; height: 11px; transform: skewX(-30deg);
+  background: linear-gradient(90deg, transparent, #00e5ff 14%, #ffffff 50%, #ff1aa6 86%, transparent);
+  box-shadow: 0 0 14px #00e5ff, 0 0 34px rgba(255,26,166,.6); }
+.sub { font: 700 62px Rajdhani; letter-spacing: 1.1em; padding-left: 1.1em; color: #bfd0ee; text-transform: uppercase; margin-top: 8px;
+  text-shadow: 0 0 10px rgba(0,200,255,.4); }
+.emblem { width: 520px; height: 590px; filter: drop-shadow(0 0 16px rgba(0,229,255,.45)); }
+
+.cl { font: 800 300px Orbitron; letter-spacing: 6px; line-height: 1; color: #f2f7ff; position: relative; display: inline-block;
+  text-shadow: 0 8px 0 #0a0f1c, 0 0 46px rgba(120,160,255,.45); }
+.cl .x { color: #3fb2ff; text-shadow: 0 8px 0 #0a0f1c, 0 0 36px rgba(60,160,255,.9); }
+.cl .c { font-weight: 500; color: #cfe0ff; }
+.studios { font: 700 70px Chakra; letter-spacing: 1.4em; padding-left: 1.4em; color: #9fb4dc; margin-top: 0; text-transform: uppercase; }
+.cbar { width: 1050px; height: 5px; margin: 10px 0 14px; background: linear-gradient(90deg, transparent, #59d6ff, #7a2cff, transparent); box-shadow: 0 0 22px #59d6ff; }
+</style></head>
+<body>
+<script>
+  const q = new URLSearchParams(location.search).get('logo') || 'full';
+  document.body.className = q;
+</script>
+
+<div class="stage" id="full">
+  <svg class="emblem" viewBox="0 0 150 170">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9fbff"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#0a5cff"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff1aa6"/><stop offset="1" stop-color="#ff7a3c"/></linearGradient>
+    </defs>
+    <polygon points="75,6 142,44 142,126 75,164 8,126 8,44" fill="#080d1a" stroke="url(#g1)" stroke-width="7"/>
+    <polygon points="88,22 40,96 70,96 56,148 112,70 80,70" fill="url(#g1)"/>
+    <line x1="8" y1="85" x2="142" y2="85" stroke="url(#g2)" stroke-width="4"/>
+  </svg>
+  <div style="text-align:center"><div class="word">Railstorm<div class="rail"></div></div><div class="sub">Instagib Arena</div></div>
+</div>
+
+<div class="stage" id="word">
+  <div class="word">Railstorm<div class="rail"></div></div><div class="sub">Instagib Arena</div>
+</div>
+
+<div class="stage" id="emblem">
+  <svg class="emblem" style="width:640px;height:725px" viewBox="0 0 150 170">
+    <defs>
+      <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9fbff"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#0a5cff"/></linearGradient>
+      <linearGradient id="g4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff1aa6"/><stop offset="1" stop-color="#ff7a3c"/></linearGradient>
+    </defs>
+    <polygon points="75,6 142,44 142,126 75,164 8,126 8,44" fill="#080d1a" stroke="url(#g3)" stroke-width="7"/>
+    <polygon points="88,22 40,96 70,96 56,148 112,70 80,70" fill="url(#g3)"/>
+    <line x1="8" y1="85" x2="142" y2="85" stroke="url(#g4)" stroke-width="4"/>
+  </svg>
+</div>
+
+<div class="stage" id="cluex">
+  <div class="cl"><span class="c">c</span>Lue<span class="x">X</span></div>
+  <div class="cbar"></div>
+  <div class="studios">Studios</div>
+</div>
+</body></html>

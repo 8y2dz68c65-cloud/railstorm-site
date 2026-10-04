@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Railstorm logo concepts</title>
+<style>
+@font-face { font-family: BlackOps; src: url("fonts/BlackOpsOne-Regular.ttf"); }
+@font-face { font-family: Russo; src: url("fonts/RussoOne-Regular.ttf"); }
+@font-face { font-family: Stencil; src: url("fonts/SairaStencilOne-Regular.ttf"); }
+@font-face { font-family: Rajdhani; src: url("fonts/Rajdhani-Bold.ttf"); }
+@font-face { font-family: Orbitron; src: url("fonts/Orbitron[wght].ttf"); font-weight: 400 900; }
+@font-face { font-family: Chakra; src: url("fonts/ChakraPetch-Bold.ttf"); }
+* { box-sizing: border-box; }
+body { margin: 0; background: #05070d; color: #fff; font-family: Rajdhani, sans-serif; }
+.concept { position: relative; height: 340px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a2233; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 120%, #1b0b3a 0%, #070a16 60%); }
+.label { position: absolute; left: 16px; top: 10px; font: 700 14px Rajdhani; letter-spacing: .3em; color: #6b7aa0; }
+.sub { font: 700 22px Rajdhani; letter-spacing: .72em; color: #b8c6e8; text-transform: uppercase; margin-top: 4px; padding-left: .72em; }
+
+/* A: forged chrome with an energy rail through it */
+.a .word { font: 400 168px BlackOps; letter-spacing: 8px; line-height: 1; text-transform: uppercase;
+  background: linear-gradient(180deg, #ffffff 0%, #c9d8ea 28%, #6f87a3 49%, #131a26 50%, #3a5a82 62%, #9fc3e8 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 2px #0b1220;
+  filter: drop-shadow(0 6px 0 #05080f) drop-shadow(0 0 22px rgba(0,200,255,.55)); }
+.a .rail { position: absolute; left: 6%; right: 6%; top: 49%; height: 5px; background: linear-gradient(90deg, transparent, #00e5ff 18%, #fff 50%, #ff1aa6 82%, transparent);
+  box-shadow: 0 0 22px #00e5ff, 0 0 60px rgba(255,26,166,.7); transform: skewX(-30deg); }
+/* B: speed italic */
+.b .word { font: 400 176px Russo; letter-spacing: 4px; line-height: 1; transform: skewX(-13deg); text-transform: uppercase;
+  background: linear-gradient(180deg, #fff2c8 0%, #ffb02e 38%, #ff4d1a 60%, #e0147a 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(5px 5px 0 #14061f) drop-shadow(-1px -1px 0 #14061f) drop-shadow(0 0 28px rgba(255,80,40,.55)); }
+.b .speed { position: absolute; left: 0; width: 22%; top: 30%; height: 40%;
+  background: repeating-linear-gradient(0deg, transparent 0 14px, rgba(255,140,40,.9) 14px 17px, transparent 17px 31px);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 85%); mask-image: linear-gradient(90deg, transparent, #000 85%); transform: skewX(-13deg); }
+/* C: wide tech */
+.c .word { font: 900 128px Orbitron; letter-spacing: 12px; line-height: 1; text-transform: uppercase; color: #eaffff;
+  text-shadow: 0 0 6px #00e5ff, 0 0 18px #00e5ff, 0 0 46px rgba(0,229,255,.8); -webkit-text-stroke: 1px #7ff3ff; }
+.c .word::after { content: ""; position: absolute; left: 0; right: 0; top: 48%; height: 7px; background: #070a16; transform: skewX(-30deg); }
+.c .bar { position: absolute; left: 12%; right: 12%; bottom: 62px; height: 3px; background: linear-gradient(90deg, #ff1aa6, #00e5ff); box-shadow: 0 0 14px #00e5ff; }
+/* D: stencil with team colours + emblem */
+.d .row { display: flex; align-items: center; gap: 28px; }
+.d .word { font: 400 150px Stencil; letter-spacing: 5px; line-height: 1; text-transform: uppercase; color: #f4f7ff;
+  text-shadow: 0 5px 0 #0a0f1c, 0 0 30px rgba(120,160,255,.4); }
+.d .word i { font-style: normal; background: linear-gradient(180deg,#ff6a4a,#d0112b); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 16px rgba(255,60,60,.7)); }
+.d .word b { font-weight: 400; background: linear-gradient(180deg,#59d6ff,#1670ff); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 16px rgba(60,160,255,.7)); }
+.emblem { width: 150px; height: 170px; filter: drop-shadow(0 0 18px rgba(0,229,255,.6)); }
+</style></head>
+<body>
+
+<div class="concept a"><span class="label">A - FORGED CHROME</span>
+  <div style="text-align:center"><div class="word">RAILSTORM</div><div class="sub">Instagib Arena</div></div><div class="rail"></div></div>
+
+<div class="concept b"><span class="label">B - SPEED</span><div class="speed"></div>
+  <div style="text-align:center"><div class="word">RAILSTORM</div><div class="sub" style="color:#ffcf99">Instagib Arena</div></div></div>
+
+<div class="concept c"><span class="label">C - TECH</span>
+  <div style="text-align:center"><div class="word" style="position:relative;display:inline-block">RAILSTORM</div><div class="sub" style="margin-top:12px">Instagib Arena</div></div><div class="bar"></div></div>
+
+<div class="concept d"><span class="label">D - STENCIL + EMBLEM</span>
+  <div class="row">
+    <svg class="emblem" viewBox="0 0 150 170">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9fbff"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#0a5cff"/></linearGradient></defs>
+      <polygon points="75,6 142,44 142,126 75,164 8,126 8,44" fill="#080d1a" stroke="url(#g)" stroke-width="7"/>
+      <polygon points="88,22 40,96 70,96 56,148 112,70 80,70" fill="url(#g)"/>
+      <line x1="8" y1="85" x2="142" y2="85" stroke="#ff1aa6" stroke-width="4"/>
+    </svg>
+    <div><div class="word"><i>RAIL</i><b>STORM</b></div><div class="sub" style="text-align:left">Instagib Arena</div></div>
+  </div></div>
+
+</body></html>
